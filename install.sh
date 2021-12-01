@@ -29,3 +29,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable graylog-server.service
 sudo systemctl start graylog-server.service
 sudo systemctl --type=service --state=active | grep graylog
+echo "Importante, defina "
+echo "password_secret ="
+echo "root_password_sha2 ="
+echo "http_bind_address = 127.0.0.1:9000 | # COLOQUE AQUI O IP DO SERVIDOR"
+echo "No arquivo /etc/graylog/server/server.conf"
