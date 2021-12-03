@@ -1,0 +1,18 @@
+<Extension _gelf>
+    Module      xm_gelf
+</Extension>
+
+<Input win>
+    Module      im_msvistalog
+</Input>
+
+<Output graylog>
+    Module      om_udp
+    Host        10.211.55.10
+    Port        1514
+    OutputType	GELF
+</Output>
+
+<Route graylog_route>
+    Path        win => graylog
+</Route>
